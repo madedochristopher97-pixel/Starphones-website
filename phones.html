@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phones - StarPhones</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container header-container">
+            <a href="index.html" class="logo" aria-label="StarPhones Home">
+                <img src="Public/Starphones Nav Logo.png" alt="StarPhones Logo">
+            </a>
+            <button class="mobile-menu-toggle" aria-label="Toggle Menu" aria-expanded="false">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="4" y1="12" x2="20" y2="12"></line>
+                    <line x1="4" y1="6" x2="20" y2="6"></line>
+                    <line x1="4" y1="18" x2="20" y2="18"></line>
+                </svg>
+            </button>
+            <nav class="main-nav">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="phones.html">Phones</a></li>
+                    <li><a href="agents.html">Agents</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+                <a href="#contact" class="btn btn-outline">Contact Us</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <img src="Public/Phones Hero.jpg" alt="Starphones Selection" class="page-header-image">
+            <div class="container">
+                <h1 class="page-title animate-on-scroll">Our Top Phones</h1>
+                <p class="page-subtitle animate-on-scroll">Pay small small with Lipa Mdogo Mdogo.</p>
+            </div>
+        </section>
+
+        <!-- Content -->
+        <section class="content-section">
+            <div class="container">
+                <div class="text-block text-center animate-on-scroll" style="margin-bottom: var(--space-6);">
+                    <h2>The best brands, ready for you.</h2>
+                    <p>Select your preferred device and take it home today. Genuine phones with local warranties, backed by our trusted Lipa Mdogo Mdogo plans.</p>
+                </div>
+                
+                <div class="grid-layout animate-on-scroll">
+                    <!-- Product Card 1 -->
+                    <div class="card">
+                        <img src="Public/Galaxy-A-Series.png" alt="Samsung Galaxy" class="card-image">
+                        <div class="card-content">
+                            <h3 class="card-title">Samsung Galaxy A Series</h3>
+                            <p class="card-subtitle">From KES 1,000 / week</p>
+                            <p class="card-text">Capture every moment. Bright displays and long-lasting batteries, perfect for staying connected everyday.</p>
+                            <div class="card-meta" style="margin-bottom: 16px;">
+                                <span>128GB Storage</span>
+                                <span>1 Year Warranty</span>
+                            </div>
+                            <button class="btn btn-orange">How to Get It</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Product Card 2 -->
+                    <div class="card">
+                        <img src="Public/Apple-iPhone-Series.webp" alt="iPhone" class="card-image">
+                        <div class="card-content">
+                            <h3 class="card-title">iPhone Selection</h3>
+                            <p class="card-subtitle">From KES 2,500 / week</p>
+                            <p class="card-text">Premium build and seamless performance. Upgrade your style and stay ahead of the curve.</p>
+                            <div class="card-meta" style="margin-bottom: 16px;">
+                                <span>Various Models</span>
+                                <span>100% Genuine</span>
+                            </div>
+                            <button class="btn btn-orange">How to Get It</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Product Card 3 -->
+                    <div class="card">
+                        <img src="Public/Tecno-Camon-.webp" alt="Tecno Camon" class="card-image">
+                        <div class="card-content">
+                            <h3 class="card-title">Tecno Camon Pro</h3>
+                            <p class="card-subtitle">From KES 800 / week</p>
+                            <p class="card-text">Next-level camera features built for the perfect selfie and night shots in Nairobi.</p>
+                            <div class="card-meta" style="margin-bottom: 16px;">
+                                <span>Super Night Mode</span>
+                                <span>Fast Charge</span>
+                            </div>
+                            <button class="btn btn-orange">How to Get It</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Product Card 4 -->
+                    <div class="card">
+                        <img src="Public/Infinix Note series.png" alt="Infinix Note" class="card-image">
+                        <div class="card-content">
+                            <h3 class="card-title">Infinix Note Series</h3>
+                            <p class="card-subtitle">From KES 750 / week</p>
+                            <p class="card-text">Big screens for big ideas. Ideal for gaming, streaming, and getting work done on the move.</p>
+                            <div class="card-meta" style="margin-bottom: 16px;">
+                                <span>6.7" Display</span>
+                                <span>Gaming Chipset</span>
+                            </div>
+                            <button class="btn btn-orange">How to Get It</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact" class="site-footer">
+        <div class="container footer-top">
+            <div class="newsletter">
+                <h3>Stay in the loop</h3>
+                <p>Get all the latest StarPhones news delivered to your Inbox.</p>
+                <form class="newsletter-form" onsubmit="event.preventDefault();">
+                    <input type="email" placeholder="Enter your email address" required aria-label="Email address">
+                    <button type="submit" class="btn btn-orange">Subscribe</button>
+                </form>
+            </div>
+            <div class="footer-links">
+                <div class="links-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="phones.html">Phones</a></li>
+                        <li><a href="agents.html">Agents</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="links-column">
+                    <h4>Get in Touch</h4>
+                    <address>
+                        <p>123 Aqua Plaza, Suite 3rd</p>
+                        <p>Nairobi, Thika Rd.</p>
+                        <p><a href="tel:+254794388578">+254 794 388 578</a></p>
+                    </address>
+                </div>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <div class="huge-logo-banner">
+                <div class="banner-content">
+                    <img src="Public/Star phones White BG.png" alt="Starphones Banner" class="banner-logo">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

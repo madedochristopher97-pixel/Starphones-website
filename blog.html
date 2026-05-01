@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - StarPhones</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container header-container">
+            <a href="index.html" class="logo" aria-label="StarPhones Home">
+                <img src="Public/Starphones Nav Logo.png" alt="StarPhones Logo">
+            </a>
+            <button class="mobile-menu-toggle" aria-label="Toggle Menu" aria-expanded="false">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="4" y1="12" x2="20" y2="12"></line>
+                    <line x1="4" y1="6" x2="20" y2="6"></line>
+                    <line x1="4" y1="18" x2="20" y2="18"></line>
+                </svg>
+            </button>
+            <nav class="main-nav">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="phones.html">Phones</a></li>
+                    <li><a href="agents.html">Agents</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+                <a href="#contact" class="btn btn-outline">Contact Us</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <img src="Public/Blog Hero.webp" alt="Starphones Community" class="page-header-image">
+            <div class="container">
+                <h1 class="page-title animate-on-scroll">The StarPhones Blog</h1>
+                <p class="page-subtitle animate-on-scroll">Tips, news, and everything you need to stay connected.</p>
+            </div>
+        </section>
+
+        <!-- Content -->
+        <section class="content-section">
+            <div class="container">
+                <div class="grid-layout animate-on-scroll">
+                    <!-- Blog Card 1 -->
+                    <div class="card">
+                        <img src="Public/lipa-mdogo-mdogo-safaricom.webp" alt="Using phone outdoors" class="card-image">
+                        <div class="card-content">
+                            <h3 class="card-title">How Lipa Mdogo Mdogo Works</h3>
+                            <p class="card-subtitle">Finance Guide</p>
+                            <p class="card-text">Confused about how you can get a brand new phone and pay slowly? We break down exactly how our flexible payment plans work.</p>
+                            <div class="card-meta" style="margin-bottom: 16px;">
+                                <span>May 1, 2026</span>
+                                <span>3 min read</span>
+                            </div>
+                            <button class="btn btn-outline">Read More</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Blog Card 2 -->
+                    <div class="card">
+                        <img src="Public/Phone for Creators.png" alt="Taking a selfie" class="card-image">
+                        <div class="card-content">
+                            <h3 class="card-title">Top 5 Phones for Content Creators</h3>
+                            <p class="card-subtitle">Tech Reviews</p>
+                            <p class="card-text">Want to take your TikTok or Instagram to the next level? Here are the best phones with top-tier cameras available at StarPhones.</p>
+                            <div class="card-meta" style="margin-bottom: 16px;">
+                                <span>April 24, 2026</span>
+                                <span>5 min read</span>
+                            </div>
+                            <button class="btn btn-outline">Read More</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Blog Card 3 -->
+                    <div class="card">
+                        <img src="Public/Extended_Warranty-Banner.webp" alt="Repairing phone" class="card-image">
+                        <div class="card-content">
+                            <h3 class="card-title">Why You Need a Genuine Warranty</h3>
+                            <p class="card-subtitle">Tips & Tricks</p>
+                            <p class="card-text">Don't get scammed. Learn why buying a genuine phone with a local warranty is crucial, and how StarPhones protects your investment.</p>
+                            <div class="card-meta" style="margin-bottom: 16px;">
+                                <span>April 10, 2026</span>
+                                <span>4 min read</span>
+                            </div>
+                            <button class="btn btn-outline">Read More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact" class="site-footer">
+        <div class="container footer-top">
+            <div class="newsletter">
+                <h3>Stay in the loop</h3>
+                <p>Get all the latest StarPhones news delivered to your Inbox.</p>
+                <form class="newsletter-form" onsubmit="event.preventDefault();">
+                    <input type="email" placeholder="Enter your email address" required aria-label="Email address">
+                    <button type="submit" class="btn btn-orange">Subscribe</button>
+                </form>
+            </div>
+            <div class="footer-links">
+                <div class="links-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="phones.html">Phones</a></li>
+                        <li><a href="agents.html">Agents</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="links-column">
+                    <h4>Get in Touch</h4>
+                    <address>
+                        <p>123 Aqua Plaza, Suite 3rd</p>
+                        <p>Nairobi, Thika Rd.</p>
+                        <p><a href="tel:+254794388578">+254 794 388 578</a></p>
+                    </address>
+                </div>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <div class="huge-logo-banner">
+                <div class="banner-content">
+                    <img src="Public/Star phones White BG.png" alt="Starphones Banner" class="banner-logo">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
