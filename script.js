@@ -1,4 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
     // Mobile Menu Toggle
     const menuToggle = document.querySelector('.mobile-menu-toggle');
     const mainNav = document.querySelector('.main-nav');
@@ -11,11 +13,54 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // Hero Image Slider
+    const heroSlides = Array.from(document.querySelectorAll('.hero-slide'));
+    const heroDots = Array.from(document.querySelectorAll('.hero-slider-dot'));
+    let currentHeroSlide = 0;
+    let heroSliderTimer;
+
+    const showHeroSlide = (slideIndex) => {
+        if (!heroSlides.length) return;
+
+        currentHeroSlide = (slideIndex + heroSlides.length) % heroSlides.length;
+
+        heroSlides.forEach((slide, index) => {
+            slide.classList.toggle('is-active', index === currentHeroSlide);
+        });
+
+        heroDots.forEach((dot, index) => {
+            const isActive = index === currentHeroSlide;
+            dot.classList.toggle('is-active', isActive);
+
+            if (isActive) {
+                dot.setAttribute('aria-current', 'true');
+            } else {
+                dot.removeAttribute('aria-current');
+            }
+        });
+    };
+
+    const startHeroSlider = () => {
+        if (prefersReducedMotion || heroSlides.length < 2) return;
+
+        window.clearInterval(heroSliderTimer);
+        heroSliderTimer = window.setInterval(() => {
+            showHeroSlide(currentHeroSlide + 1);
+        }, 5000);
+    };
+
+    heroDots.forEach((dot) => {
+        dot.addEventListener('click', () => {
+            showHeroSlide(Number(dot.dataset.slide));
+            startHeroSlider();
+        });
+    });
+
+    showHeroSlide(0);
+    startHeroSlider();
+
     // Scroll Animations (Intersection Observer)
     const animatedElements = document.querySelectorAll('.animate-on-scroll');
-
-    // Check if user prefers reduced motion
-    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
     if (!prefersReducedMotion && 'IntersectionObserver' in window) {
         const observerOptions = {
