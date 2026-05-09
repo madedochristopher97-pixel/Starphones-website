@@ -884,3 +884,56 @@ h1, h2, h3, h4, h5, h6 {
 .text-block h3 {
     margin: var(--space-6) 0 var(--space-2);
 }
+
+/* ==========================================================================
+   Pricing Table
+   ========================================================================== */
+.pricing-table-container {
+    overflow-x: auto;
+    border-radius: var(--border-radius-md);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    background-color: var(--color-white);
+    margin-bottom: var(--space-4);
+    width: 100%;
+}
+
+.pricing-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 1000px; /* Forces scroll on small screens */
+    text-align: left;
+    font-size: 0.9rem;
+}
+
+.pricing-table thead th {
+    background-color: var(--color-navy);
+    color: var(--color-white);
+    padding: var(--space-3) var(--space-3);
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.pricing-table tbody td {
+    padding: var(--space-2) var(--space-3);
+    border-bottom: 1px solid var(--color-off-white);
+    color: var(--color-charcoal);
+    white-space: nowrap;
+}
+
+.pricing-table tbody tr:nth-child(even) {
+    background-color: #F8FAFC;
+}
+
+.pricing-table tbody tr:hover {
+    background-color: var(--color-off-white);
+}
+
+.pricing-table td:nth-child(n+4) {
+    font-family: monospace;
+    font-size: 0.95rem;
+}
+
+.brand-cell {
+    font-weight: 700;
+    color: var(--color-orange);
+}
