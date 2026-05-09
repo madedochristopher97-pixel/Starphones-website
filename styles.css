@@ -627,6 +627,31 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ==========================================================================
+   WhatsApp Floating Button
+   ========================================================================== */
+.whatsapp-float {
+    position: fixed;
+    bottom: var(--space-4);
+    right: var(--space-4);
+    background-color: #25D366;
+    color: var(--color-white);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    z-index: 1000;
+    transition: transform var(--transition-speed) ease, background-color var(--transition-speed) ease;
+}
+
+.whatsapp-float:hover {
+    transform: translateY(-5px);
+    background-color: #128C7E;
+}
+
+/* ==========================================================================
    Responsive Design
    ========================================================================== */
 @media (max-width: 992px) {
