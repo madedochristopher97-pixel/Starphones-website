@@ -644,6 +644,14 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: 0 4px 12px rgba(0,0,0,0.15);
     z-index: 1000;
     transition: transform var(--transition-speed) ease, background-color var(--transition-speed) ease;
+    flex-shrink: 0;
+    aspect-ratio: 1 / 1;
+}
+
+.whatsapp-float svg {
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
 }
 
 .whatsapp-float:hover {
